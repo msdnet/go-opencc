@@ -36,7 +36,7 @@ void Opencc_Delete(void *id) {
 
 const char *Opencc_Convert(void *id, const char *input) {
 	char *output = opencc_convert_utf8(id, input, strlen(input));
-	output[strlen(input)] = '\0';
+	output[strlen(output)] = '\0';
 	return output;
 }
 
